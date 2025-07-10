@@ -1,0 +1,76 @@
+{
+  "timestamp": "2025-06-11T13:56:23.120123",
+  "summary": {
+    "total_requests": 34,
+    "unique_ips": 5,
+    "most_active_ip": "203.0.113.5"
+  },
+  "suspicious_activity": {
+    "high_risk_ips": [
+      "203.0.113.5",
+      "192.168.1.100"
+    ],
+    "failed_login_attempts": {
+      "203.0.113.5": 8,
+      "192.168.1.100": 5
+    }
+  },
+  "endpoint_analysis": {
+    "/home": 5,
+    "/login": 13,
+    "/about": 5,
+    "/contact": 2,
+    "/register": 2,
+    "/dashboard": 3,
+    "/profile": 2,
+    "/feedback": 2
+  },
+  "anomaly_detection": [],
+  "threat_predictions": {
+    "potential_targets": [
+      "203.0.113.5",
+      "192.168.1.100"
+    ],
+    "attack_pattern_confidence": {
+      "203.0.113.5": 8,
+      "192.168.1.100": 5
+    }
+  },
+  "ip_threat_scores": {
+    "192.168.1.1": {
+      "threat_score": 44,
+      "geolocation": {
+        "error": "HTTPSConnectionPool(host='ipapi.co', port=443): Max retries exceeded with url: /192.168.1.1/json/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000023EFCC20680>: Failed to resolve 'ipapi.co' ([Errno 11001] getaddrinfo failed)\"))",
+        "ip": "192.168.1.1"
+      }
+    },
+    "203.0.113.5": {
+      "threat_score": 71,
+      "geolocation": {
+        "error": "HTTPSConnectionPool(host='ipapi.co', port=443): Max retries exceeded with url: /203.0.113.5/json/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000023EFCC22DB0>: Failed to resolve 'ipapi.co' ([Errno 11001] getaddrinfo failed)\"))",
+        "ip": "203.0.113.5"
+      }
+    },
+    "10.0.0.2": {
+      "threat_score": 42,
+      "geolocation": {
+        "error": "HTTPSConnectionPool(host='ipapi.co', port=443): Max retries exceeded with url: /10.0.0.2/json/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000023EFCC23470>: Failed to resolve 'ipapi.co' ([Errno 11001] getaddrinfo failed)\"))",
+        "ip": "10.0.0.2"
+      }
+    },
+    "198.51.100.23": {
+      "threat_score": 46,
+      "geolocation": {
+        "error": "HTTPSConnectionPool(host='ipapi.co', port=443): Max retries exceeded with url: /198.51.100.23/json/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000023EFCC23B60>: Failed to resolve 'ipapi.co' ([Errno 11001] getaddrinfo failed)\"))",
+        "ip": "198.51.100.23"
+      }
+    },
+    "192.168.1.100": {
+      "threat_score": 65,
+      "geolocation": {
+        "error": "HTTPSConnectionPool(host='ipapi.co', port=443): Max retries exceeded with url: /192.168.1.100/json/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000023EFCC5C1A0>: Failed to resolve 'ipapi.co' ([Errno 11001] getaddrinfo failed)\"))",
+        "ip": "192.168.1.100"
+      }
+    }
+  }
+}
